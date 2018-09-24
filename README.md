@@ -1,2 +1,2 @@
-# Testing Titanic Dataset - Homework
-Data Science - Home work
+# Testing Titanic Dataset
+Home work

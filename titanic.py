@@ -13,12 +13,12 @@ import seaborn as sns
 titanic = pd.read_table('titanic.csv', header = 0, sep = ',')
 print(titanic.head())
 
-titanic.isnull().sum()
+print(titanic.isnull().sum())
 
 sns.countplot('Survived', data=titanic)
-plt.show()
+# plt.show()
 
-titanic.groupby(['Sex','Pclass']).mean()
+print(titanic.groupby(['Sex','Pclass']).mean())
 
-mean_values = titanic.groupby(['Sex','Pclass']).mean()
-mean_values['Survived'].plot(kind='bar')
+# mean_values = titanic.groupby(['Sex','Pclass']).mean()
+# mean_values['Survived'].plot(kind='bar')
